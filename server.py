@@ -13,7 +13,7 @@ class SaveModelStrategy(fl.server.strategy.FedAvg):
         if aggregated_weights is not None:
             # Save aggregated_weights
             print(f"Saving round {rnd} aggregated_weights...")
-            np.savez(f"./weights/round-{rnd}-weights.npz", *aggregated_weights)
+            np.savez(f"round-{rnd}-weights.npz", *aggregated_weights)
         return aggregated_weights
 
 # Create strategy and run server

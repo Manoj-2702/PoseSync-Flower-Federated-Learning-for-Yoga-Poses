@@ -62,7 +62,7 @@ folder_path = './data/Resized_images1'
 images, labels = load_images_from_folder(folder_path)
 
 # Split dataset into training and testing
-x_train, x_test, y_train, y_test = train_test_split(images, labels, test_size=0.15, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
 x_train = x_train.reshape(-1, 28, 28, 1)
 x_test = x_test.reshape(-1, 28, 28, 1)
 
