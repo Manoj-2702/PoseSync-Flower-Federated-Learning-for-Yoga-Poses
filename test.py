@@ -111,7 +111,7 @@ def classify_image(image):
     predictions = model.predict(img)
     return np.argmax(predictions)
 
-st.title('Image Classification')
+st.title('Yoga Pose Classification')
 st.title('Done with ❤️❤️')
 st.title('Manoj, Shreya NP, Shreya Gunnan, Prerana')
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
