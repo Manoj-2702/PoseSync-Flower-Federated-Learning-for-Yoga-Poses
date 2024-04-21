@@ -58,7 +58,7 @@ def load_images_from_folder(folder, img_height=28, img_width=28):
     return images, labels
 
 # Load your images
-folder_path = './data/Resized_images1'
+folder_path = './data/newImages'
 images, labels = load_images_from_folder(folder_path)
 
 # Split dataset into training and testing

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>你所访问的页面不存在 (404)</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+        html {
+            height: 100%;
+        }
+
+        /* always display scrollbars */
+        body {
+            height: 100%;
+            font-size: 62.5%;
+            line-height: 1;
+            font-family: Arial, Tahoma, Verdana, sans-serif;
+        }
+
+    
+        /* IE 6/7 */
+        .clear {
+            zoom: 1
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            overflow: hidden;
+        }
+
+        #wrapper {
+            height: 100%;
+            background:#fff;
+        }
+
+body {
+    overflow-x: hidden
+}
+
+.page-warp .page-content {
+    flex-grow: 1
+}
+
+.page-warp {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.error-wrap {
+    display: flex;
+    height: 100vh;
+}
+
+
+@media(min-width: 1000px) {
+    .error-wrap .error-container {
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px
+    }
+
+    .error-wrap .error-img {
+        width: 600px;
+        padding-right: 100px
+    }
+
+    .error-wrap .error-text {
+        width: 400px
+    }
+}
+
+.error-wrap .error-img {
+    text-align: center
+}
+
+.error-wrap .error-img img {
+    max-width: 100%
+}
+
+.error-wrap .error-text .links a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px 35px;
+    border-radius: 21px;
+    cursor: pointer;
+    color:#fff;
+    text-decoration: none;
+}
+
+.error-wrap .error-text .links a {
+    border: 1px solid #a0c6fd;
+    color: #333c5e
+}
+
+.error-wrap .error-text .links a:hover {
+    background: #a0c6fd;
+    color: #fff
+}
+
+.error-wrap .error-code {
+    font-family: Arial;
+    color: #ffc14e;
+    font-size: 136px;
+    margin-bottom: 20px
+}
+
+.error-wrap .error-msg {
+    font-size: 22px;
+    color: #333c5e;
+    margin-bottom: 52px
+}
+
+@media(max-width: 1000px) {
+    .error-wrap .error-container {
+        width:100%
+    }
+
+    .error-wrap .error-img {
+        margin-bottom: 20px;
+        padding: 0 20px
+    }
+
+    .error-wrap .error-text {
+        text-align: center
+    }
+
+    .error-wrap .error-text .links a {
+        padding: 6px 20px;
+        border-radius: 12px
+    }
+
+    .error-wrap .error-code {
+        font-size: 60px;
+        margin-bottom: 10px
+    }
+
+    .error-wrap .error-msg {
+        font-size: 16px;
+        margin-bottom: 15px
+    }
+}
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="__layout">
+        <div class="page-warp">
+            <div class="error-wrap">
+                <div class="error-container">
+                    <div class="error-img">
+                    <img src="https://gcdn.myxypt.com/images/404.png" alt="">
+                    </div>
+                    <div class="error-text">
+                        <div class="error-code">404</div>
+                        <div class="error-msg">你所访问的页面不存在 (404)</div>
+                        
+                        <div class="links">
+                            <a href="http://www.zhongrui.cc/">返回首页</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+function isIFrameSelf(){try{if(window.top ==window){return false;}else{return true;}}catch(e){return true;}}
+function toHome(){ if(!isIFrameSelf()){ window.location.href="http://www.zhongrui.cc/";}}
+window.setTimeout("toHome()",10000);
+</script>
+
+
+</html>
