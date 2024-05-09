@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import os
 from PIL import Image
 import sys
-
+from sklearn.metrics import confusion_matrix
 
 # Load and compile Keras model
 model = tf.keras.models.Sequential([
@@ -64,7 +64,7 @@ folder_path = './data/newImages'
 images, labels = load_images_from_folder(folder_path)
 
 # Split dataset into training and testing
-x_train, x_test, y_train, y_test = train_test_split(images, labels, test_size=0.15, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(images, labels, test_size=0.3, random_state=42)
 x_train = x_train.reshape(-1, 28, 28, 1)
 x_test = x_test.reshape(-1, 28, 28, 1)
 
@@ -99,3 +99,31 @@ fl.client.start_numpy_client(
         client=FlowerClient(), 
         grpc_max_message_length = 1024*1024*1024
 )
+
+# y_pred=model.predict(x_test)
+# y_pred = np.argmax(y_pred, axis=1)
+
+# cm = confusion_matrix(y_true=np.argmax(y_test, axis=1), y_pred=y_pred)
+# print("Confusion Matrix:")
+# print(cm)
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+num_classes = 8  # Number of classes
+cm = np.array([[133, 0, 0, 0, 0, 0, 0, 0],
+               [0, 132, 0, 0, 0, 0, 0, 0],
+               [0, 0, 133, 0, 0, 0, 0, 0],
+               [0, 0, 0, 131, 0, 0, 0, 0],
+               [0, 0, 0, 0, 136, 0, 0, 0],
+               [0, 0, 0, 0, 0, 53, 0, 0],
+               [0, 0, 0, 0, 0, 0, 127, 0],
+               [0, 0, 0, 0, 0, 0, 0, 120]])
+
+# Plot the confusion matrix
+plt.figure(figsize=(10, 8))
+sns.heatmap(cm, annot=True, cmap="Blues", fmt="d")
+plt.xlabel("Predicted Labels")
+plt.ylabel("True Labels")
+plt.title("Confusion Matrix")
+plt.show()

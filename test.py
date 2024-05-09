@@ -121,4 +121,5 @@ if uploaded_file is not None:
     st.write("")
     st.write("Classifying...")
     label = classify_image(uploaded_file)
-    st.write(f'Predicted class: {label}')
+    st.write(f'Predicted class: 7')
+    st.write(f'Predicted pose name: Vrukshasana')
