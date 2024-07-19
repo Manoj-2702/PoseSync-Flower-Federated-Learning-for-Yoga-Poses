@@ -1,10 +1,10 @@
 
-<h1 align="center">PoseSync: Flower Federated Learning for Yoga Pose Classification</h1>
+<h1 align="center">YogAsana: Flower Federated Learning for Yoga Pose Classification</h1>
 <p align="center">
   <img src="https://github.com/Manoj-2702/Yoga-Pose-Estimation-by-Flower-Federated-Learning/assets/103581128/73bfd72c-120f-41fc-97e3-d277b4afcd4d" alt="Logo" />
 </p>
 
-This project demonstrates the use of Federated Learning with Flower for training a convolutional neural network (CNN) on a yoga pose classification task. The model is trained on distributed datasets across multiple clients, allowing for collaborative learning while preserving data privacy.
+This project showcases the application of Federated Learning using Flower to train a Convolutional Neural Network (CNN) for yoga pose classification. The model is trained on distributed datasets across multiple clients, enabling collaborative learning while preserving data privacy.
 
 ## Prerequisites
 
